@@ -24,7 +24,6 @@ app.post('/api/find-emails', async (req: Request, res: Response) => {
             return res.status(400).json({ error: 'File path is required' });
         }
 
-        // Resolve the path relative to the project root (one level up from backend)
         const absolutePath = path.resolve(process.cwd(), '..', filePath);
         const companies = await excelReader.readCompanies(absolutePath);
         const results = [];

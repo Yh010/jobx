@@ -34,8 +34,6 @@ Please analyze and provide the most likely email addresses for this founder.
                 const result = await model.generateContent(prompt);
                 const response = await result.response;
                 const text = response.text();
-
-                // Parse the response and extract email predictions
                 const predictions = this.parseLLMResponse(text);
 
                 responses.push({
