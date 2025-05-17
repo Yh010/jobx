@@ -17,7 +17,7 @@ export class EmailFinderService {
 
     async findEmails(company: Company): Promise<EmailFinderResponse[]> {
         const responses: EmailFinderResponse[] = [];
-        const model = this.genAI.getGenerativeModel({ model: 'gemini-pro' });
+        const model = this.genAI.getGenerativeModel({ model: 'gemini-1.5-pro' });
 
         for (const founder of company.founders) {
             const prompt = `
