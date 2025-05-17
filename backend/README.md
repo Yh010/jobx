@@ -12,7 +12,7 @@ npm install
 2. Create a `.env` file in the root directory with the following variables:
 ```
 PORT=3000
-ANTHROPIC_API_KEY=your_api_key_here
+GOOGLE_API_KEY=your_api_key_here
 ```
 
 3. Build the project:
